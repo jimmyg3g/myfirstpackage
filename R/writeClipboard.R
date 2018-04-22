@@ -4,5 +4,5 @@
 
 
 writeClipboard <- function(input) {
-  write.table(input, 'clipboard', row.names=F, sep='\t')
+  rio::export(input, 'clipboard')
 }
