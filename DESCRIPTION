@@ -1,7 +1,7 @@
 Package: myfirstpackage
 Title: My First Package
 Version: 0.0.0.9001
-Authors@R: person("Jimmy", "Last", email = "first.last@example.com", role = c("aut", "cre"))
+Authors@R: person("Jimmy", "G", email = "first.last@example.com", role = c("aut", "cre"))
 Description: A few functions for me. 
 Depends: R (>= 3.4.1)
 License: What license is it under?
