@@ -8,8 +8,15 @@
 #' @export
 
 writeExcel <- function(input) {
-  my_filename <- Sys.time() %>% as.character() %>% gsub('\\s|\\-|:', '_', .) %>%
-    paste0('C:/Users/jglenn/Downloads/', ., '.csv')
-  write.csv(input, file=my_filename, row.names=F)
+  my_sheet <- Sys.time() %>% as.character() %>% gsub('\\s|\\-|:', '_', .)
+  my_filename <- paste0('C:/Users/jglenn/Downloads/', my_sheet, '.xlsx')
+  wb <- openxlsx::createWorkbook()
+  options("openxlsx.orientation" = 'landscape')
+  openxlsx::modifyBaseFont(wb, fontSize = 10)
+  openxlsx::addWorksheet(wb, sheetName = my_sheet)
+  openxlsx::freezePane(wb, my_sheet, firstRow = TRUE)
+  openxlsx::writeData(wb, my_sheet, input)
+  openxlsx::setColWidths(wb, my_sheet, 1:25, widths = 'auto')
+  openxlsx::saveWorkbook(wb, my_filename, overwrite = TRUE)
   shell.exec(my_filename)
 }

@@ -14,4 +14,7 @@ Imports:
     rio,
     clipr,
     fs,
-    feather
+    feather,
+    openxlsx
+Suggests: 
+    testthat
