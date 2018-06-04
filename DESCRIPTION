@@ -15,6 +15,7 @@ Imports:
     clipr,
     fs,
     feather,
-    openxlsx
+    openxlsx,
+    purrr
 Suggests: 
     testthat

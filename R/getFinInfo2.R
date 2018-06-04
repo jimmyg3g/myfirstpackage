@@ -1,13 +1,12 @@
-#` getFinInfo
+#` getFinInfo2
 #`
-#` This function imports finInfo from feather files actual & budget 2016 - present.
-#' @import dplyr
-#' @import purrr
+#` This function imports finInfo2 from feather files actual & budget 2016 - present.
+
 #' @export
 
 
-getFinInfo <- function() {
-  fs::dir_ls("C:/Users/jglenn/Documents/R/tm1-2/data_feather", regex = "actual.*201(6|7|8)\\.feather|budget.*2018\\.feather") %>%
+getFinInfo2 <- function() {
+  fs::dir_ls("C:/Users/jglenn/Documents/R/tm1-3/data_feather", regex = "actual.*201(6|7|8)\\.feather|budget.*2018\\.feather") %>%
     map(., ~ feather::read_feather(.x)) %>%
     reduce(bind_rows) %>%
     mutate(fin_version = case_when(
