@@ -3,6 +3,7 @@
 #` This function imports finInfo from feather files actual & budget 2016 - present.
 #' @import dplyr
 #' @import purrr
+#' @import tidyverse
 #' @export
 
 

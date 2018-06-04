@@ -5,6 +5,7 @@
 #' @importFrom magrittr %>%
 #' @name %>%
 #' @rdname pipe
+#' @import tidyverse
 #' @export
 
 writeExcel <- function(input) {
