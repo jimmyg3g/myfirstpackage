@@ -16,6 +16,7 @@ Imports:
     fs,
     feather,
     openxlsx,
-    purrr
+    purrr,
+    lubridate
 Suggests: 
     testthat

@@ -2,6 +2,7 @@
 
 export(getFinInfo)
 export(getFinInfo2)
+export(getPeriod)
 export(writeClipboard)
 export(writeExcel)
 import(dplyr)
