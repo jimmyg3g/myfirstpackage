@@ -10,7 +10,7 @@
 
 writeExcel <- function(input) {
   my_sheet <- Sys.time() %>% as.character() %>% gsub('\\s|\\-|:', '_', .)
-  my_filename <- paste0('C:/Users/jglenn/Downloads/', my_sheet, '.xlsx')
+  my_filename <- paste0('C:/Users/jimmy.XPS15/Downloads/', my_sheet, '.xlsx')
   wb <- openxlsx::createWorkbook()
   options("openxlsx.orientation" = 'landscape')
   openxlsx::modifyBaseFont(wb, fontSize = 10)
