@@ -3,6 +3,8 @@
 export(getFinInfo)
 export(getFinInfo2)
 export(getPeriod)
+export(getPrds)
+export(prettyNames)
 export(writeClipboard)
 export(writeExcel)
 import(dplyr)

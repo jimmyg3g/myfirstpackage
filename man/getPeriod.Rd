@@ -9,6 +9,9 @@ getPeriod(date)
 \arguments{
 \item{date}{}
 }
+\value{
+
+}
 \description{
 This function converts a date to period in yyyymm format.
 }
