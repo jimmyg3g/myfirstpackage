@@ -10,7 +10,7 @@
 
 writeExcel <- function(input) {
   my_sheet <- Sys.time() %>% as.character() %>% gsub('\\s|\\-|:', '_', .)
-  my_folder <- paste0(x[['USERPROFILE']], '\\downloads\\')
+  my_folder <- paste0(Sys.getenv()[['USERPROFILE']], '\\downloads\\')
   fs::dir_create(my_folder)
   my_filename <- paste0(my_folder, my_sheet, '.xlsx')
   wb <- openxlsx::createWorkbook()
