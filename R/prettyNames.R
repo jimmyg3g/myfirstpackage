@@ -1,5 +1,3 @@
-
-
 #' prettyNames
 #'
 #' This function takes a tibble and converts to Big Camel

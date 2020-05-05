@@ -1,5 +1,3 @@
-
-
 #' getPrds
 #'
 #' This function returns calendar month periods for `map` GA queries
