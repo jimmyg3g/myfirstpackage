@@ -4,7 +4,7 @@
 \alias{substring_index}
 \title{Substring Index}
 \usage{
-substring_index(string, delimiter, number)
+substring_index(string, delim, count)
 }
 \arguments{
 \item{number}{}
