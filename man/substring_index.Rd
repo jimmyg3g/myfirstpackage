@@ -4,7 +4,7 @@
 \alias{substring_index}
 \title{Substring Index}
 \usage{
-substring_index(string, delim, count)
+substring_index(string, delimiter, number)
 }
 \arguments{
 \item{number}{}
@@ -14,4 +14,7 @@ substring_index(string, delim, count)
 }
 \description{
 This function mimics MySQL's substring_index() function.
+}
+\examples{
+mtcars \%>\% rownames_to_column() \%>\% as_tibble() \%>\% mutate(ck = substring_index(rowname, ' ', 1))
 }
